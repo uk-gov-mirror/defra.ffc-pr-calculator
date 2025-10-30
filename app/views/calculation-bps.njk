@@ -6,11 +6,13 @@
 {% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
 
 {% block beforeContent %}
-  {{ govukBackLink({
+  <div class="govuk-width-container">
+    {{ govukBackLink({
         text: "Back",
         href: "/bps-calculator",
         classes: "govuk-!-margin-bottom-7"
       }) }}
+  </div>
 {% endblock %}
 
 {% block content %}

@@ -7,12 +7,14 @@
 {% from "govuk/components/back-link/macro.njk" import govukBackLink %}
 
 {% block beforeContent %}
-  {{ govukBackLink({
-    text: "Back",
-    href: "/",
-    attributes: {
-      id: "back"
-    } }) }}
+  <div class="govuk-width-container">
+    {{ govukBackLink({
+      text: "Back",
+      href: "/",
+      attributes: {
+        id: "back"
+      } }) }}
+  </div>
 {% endblock %}
 
 {% block content %}
@@ -21,7 +23,7 @@
         <div class="govuk-grid-column-two-thirds">
           <form method="POST" action="/delinked-calculator" novalidate>
             <input type="hidden" name="crumb" value="{{crumb}}"/>
-            <h1 class="govuk-heading-l">Enter your delinked payment reference amount</h1>
+            <h2 class="govuk-heading-l">Enter your delinked payment reference amount</h2>
             <p class="govuk-body">
               This calculator will estimate your payment for each of the years 2024 to 2027 based on the reference amount you enter.
             </p>

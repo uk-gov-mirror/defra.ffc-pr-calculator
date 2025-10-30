@@ -1,11 +1,8 @@
 function ViewModel (value, error) {
   // Constructor function to create logic dependent nunjucks page
   this.model = {
-    label: {
-      text: 'Enter your delinked payment reference amount',
-      classes: 'govuk-!-display-none',
-      isPageHeading: true
-    },
+    labelText: 'Enter your delinked payment reference amount',
+    labelClasses: 'govuk-!-display-none',
     hint: {
       text: 'Do not include commas in the amount you enter. For example, enter £20,000 as 20000.'
     },
