@@ -56,16 +56,14 @@
             href: "/cookies"
           }
         ]
-      },{
+      },
+      {
         html: acceptHtml,
         role: "alert",
         hidden: true,
         classes: "js-cookies-accepted",
         actions: [
-          {
-            text: "Hide this message",
-            classes: "js-hide"
-          }
+          { text: "Hide this message", classes: "js-hide" }
         ]
       },
       {
@@ -74,10 +72,7 @@
         hidden: true,
         classes: "js-cookies-rejected",
         actions: [
-          {
-            text: "Hide this message",
-            classes: "js-hide"
-          }
+          { text: "Hide this message", classes: "js-hide" }
         ]
       }
     ]
@@ -86,4 +81,4 @@
 
 <% htmlWebpackPlugin.files.js.forEach(file => { %>
   <script src="<%= file.replace('../dist/', 'static/') %>"></script>
-  <% }) %>
+<% }) %>

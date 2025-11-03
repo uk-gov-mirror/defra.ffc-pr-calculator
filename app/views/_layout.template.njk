@@ -1,6 +1,8 @@
 {% extends "govuk/template.njk" %}
 {% set govukRebrand = true %}
 
+{% from "govuk/components/header/macro.njk" import govukHeader %}
+
 {% block head %}
   {% if cookiesPolicy and cookiesPolicy.analytics %}
     {% include "./tag-manager/_head-content.njk" %}

@@ -3,8 +3,7 @@ function ViewModel (value, error) {
   this.model = {
     label: {
       text: 'Enter your delinked payment reference amount',
-      classes: 'govuk-!-display-none',
-      isPageHeading: true
+      classes: 'govuk-label--s'
     },
     hint: {
       text: 'Do not include commas in the amount you enter. For example, enter £20,000 as 20000.'

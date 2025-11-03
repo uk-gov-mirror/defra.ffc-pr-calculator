@@ -6,11 +6,13 @@
 {% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
 
 {% block beforeContent %}
-  {{ govukBackLink({
-        text: "Back",
-        href: "/value",
-        classes: "govuk-!-margin-bottom-7"
-      }) }}
+  <div class="govuk-width-container">
+    {{ govukBackLink({
+      text: "Back",
+      href: "/value",
+      classes: "govuk-!-margin-bottom-7"
+    }) }}
+  </div>
 {% endblock %}
 
 {% block content %}
